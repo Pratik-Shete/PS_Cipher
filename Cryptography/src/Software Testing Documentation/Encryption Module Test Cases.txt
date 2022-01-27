@@ -1,0 +1,65 @@
+
+TEST SCENARIO: Test Encryption module functionality
+
+****************************************************************************************
+
+TEST CASE 1:
+Check response on entering valid file path and key
+
+
+PRE-CONDITION:
+A text file with text data is required to be stored on any drive of system.
+
+
+TEST STEP:
+1. Execute program
+2. Enter Text File path for encryption
+3. Enter numeric key for encryption
+
+
+TEST DATA:
+File Path: E:\\abc.txt
+key: 99999999
+
+
+EXPECTED RESULT:
+Encryption should be successful.
+
+
+ACTUAL RESULT:
+Encrypted successfully.
+
+
+PASS/FAIL: PASS
+
+
+********************************************************************************************
+
+TEST CASE 2:
+Check response on entering invalid path and key
+
+
+PRE-CONDITION:
+A text file with text data is required to be stored on any drive of system.
+
+
+TEST STEP:
+1. Execute program
+2. Enter Text file path for Encryption
+3. Enter numeric key for encryption
+
+
+TEST DATA:
+File Path: E:\\ab.ps
+key: +!@$
+
+
+EXPECTED RESULT:
+Should show File Not Found and/or Invalid key Exception
+
+
+ACTUAL RESULT:
+Encryption Fails.
+
+
+PASS/FAIL: FAIL

@@ -1,0 +1,65 @@
+
+TEST SCENARIO: Test Decryption module functionality
+
+****************************************************************************************
+
+TEST CASE 1:
+Check response on entering valid file path and key
+
+
+PRE-CONDITION:
+An encrypted file with encrypted data is required to be stored on any drive of system.
+
+
+TEST STEP:
+1. Execute program
+2. Enter Encrypted File path for Decryption
+3. Enter numeric key for Decryption
+
+
+TEST DATA:
+File Path: E:\\abc.ps
+key: 99999999
+
+
+EXPECTED RESULT:
+Decryption should be successful.
+
+
+ACTUAL RESULT:
+Decryption successful.
+
+
+PASS/FAIL: PASS
+
+
+********************************************************************************************
+
+TEST CASE 2:
+Check response on entering Invalid path and key
+
+
+PRE-CONDITION:
+An encrypted file with encrypted data is required to be stored on any drive of system.
+
+
+TEST STEP:
+1. Execute program
+2. Enter encrypted file path for Decryption
+3. Enter numeric key for Decryption
+
+
+TEST DATA:
+File Path: E:\\ab.ps
+key: +!@$
+
+
+EXPECTED RESULT:
+Should show File Not Found and/or Invalid key Exception
+
+
+ACTUAL RESULT:
+Decryption Fails.
+
+
+PASS/FAIL: FAIL
